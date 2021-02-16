@@ -1,0 +1,53 @@
+.list {
+  font-size: 15px;
+  width: 400px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.delete {
+  background-color: transparent;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: transparent;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+.icon:hover {
+  fill: rgb(212, 6, 6);
+}
+.enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.enterActive {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 250ms linear;
+}
+.exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.exitActive {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 250ms linear;
+}
